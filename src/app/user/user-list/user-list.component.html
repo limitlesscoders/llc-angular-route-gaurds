@@ -1,0 +1,14 @@
+
+<mat-list *ngFor="let user of users">
+<mat-list-item class="list-item">
+  {{user.name}}
+  </mat-list-item>
+  <mat-list-item>
+    <button 
+      color="primary"
+      (click)="userDetails(user)"
+      mat-raised-button>Show More</button>
+  </mat-list-item>
+<mat-divider></mat-divider>
+</mat-list>
+<router-outlet></router-outlet>

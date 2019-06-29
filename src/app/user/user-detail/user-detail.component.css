@@ -1,0 +1,9 @@
+.details{
+  margin:10px;
+  padding:5px;
+}
+
+.content{
+  display:grid;
+  margin:0 16px;
+}

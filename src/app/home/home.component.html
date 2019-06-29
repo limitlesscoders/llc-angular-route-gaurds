@@ -1,0 +1,39 @@
+<div class="component-container">
+  
+  <div class="link-container">
+    <div class="row">
+      <span class="label">Unprotected route -</span>
+          <button 
+            class="llc-btn-large"  color="primary"
+            (click)="goToProducts()"
+            mat-raised-button>Show Products</button>
+    </div>
+
+      <div class="row">
+          <span class="label">Protected route -</span>
+            <button 
+                class="llc-btn-medium"  color="primary"
+                (click)="goToUsers()"
+                mat-raised-button>Show Users</button>
+            </div>
+
+
+        </div>
+
+  
+<div class="permission-container">
+    <div class="row">
+      <span class="label">Can Access Protected Route? 
+      <span *ngIf=" allowedAccess; else blockedAccess" class="allowed">YES</span>
+      <ng-template #blockedAccess>
+         <span class="blocked">NOT YET   </span>
+         <button 
+            class="llc-btn-large"  color="primary"
+            (click)="allowRouteAccess()"
+            mat-raised-button>Unlock Routes</button>
+      </ng-template>
+      </span> 
+        </div>
+
+    </div>
+</div>

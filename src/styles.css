@@ -1,0 +1,27 @@
+/* Add application styles & imports to this file! */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.label{
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin:5px;
+}
+
+.llc-toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.llc-btn-medium{
+ margin:5px !important;
+ width:100px;
+}
+
+.llc-btn-small{
+ margin:5px !important;
+ width:75px;
+}
+
+.float-right{
+  float:right !important;
+}

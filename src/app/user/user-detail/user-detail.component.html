@@ -1,0 +1,21 @@
+<div class="details" *ngIf="user;else noUser">
+  <mat-card>
+      <mat-card-header>
+        <mat-card-title>Showing Details of {{user.name}}</mat-card-title>  
+      </mat-card-header>
+      <mat-card-content class="content">
+        <mat-label><strong>Name:</strong> {{user.name}}</mat-label>
+        <mat-label><strong>Email:</strong> {{user.email}}</mat-label>
+        <mat-label><strong>Mobile:</strong> {{user.mobile}}</mat-label>
+      </mat-card-content>
+      
+  </mat-card>
+</div>
+<ng-template #noUser>
+  <mat-card>
+      <mat-card-header>
+        <mat-card-title>Please select a diffrent user</mat-card-title>  
+      </mat-card-header>      
+  </mat-card></ng-template>
+
+
